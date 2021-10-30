@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  html,
+body {
+	height: 100%;
+}
+
+.fullheader{
+  width:100% !important
+}
+
+.paragraphe p{
+  margin-bottom: 10px;
+}
