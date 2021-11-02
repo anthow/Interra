@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
+import Listprojet from "../components/listprojets"
 
 const DecouvrirPage = ({ data }) => (
     <Layout className="">
@@ -87,48 +88,7 @@ const DecouvrirPage = ({ data }) => (
             </article>
             <article className="w-full ">
                 <h1 className="text-vert-interra text-4xl mb-10 font-black  text-center">  {data.datoCmsDecouvrirInterra.titreNosProjets} </h1>
-                <section className="w-7/12 m-auto md:grid grid-cols-2  gap-10 py-5 md:py-10">
-                    <div className="flex flex-col ">
-                        <figure className="mb-5">
-                            <StaticImage src="../images/pexels-thirdman.jpg" alt="A dinosaur" className="" />
-                        </figure>
-                        <h2 className="text-2xl text-orange-interra font-black mb-2">Interact</h2>
-                        <p>Rencontre collective autour d’une passion commune </p>
-                    </div>
-
-                    <div className="flex flex-col ">
-                        <figure className="mb-5">
-                            <StaticImage src="../images/pexels-thirdman.jpg" alt="A dinosaur" className="" />
-                        </figure>
-                        <h2 className="text-2xl text-orange-interra font-black mb-2">Duo langue</h2>
-                        <p> Mise en relation de deux personnes pour pratiquer la langue française </p>
-                    </div>
-
-                    <div className="flex flex-col ">
-                        <figure className="mb-5">
-                            <StaticImage src="../images/pexels-thirdman.jpg" alt="A dinosaur" className="" />
-                        </figure>
-                        <h2 className="text-2xl text-orange-interra font-black mb-2">
-                            Incubateur inclusif
-                        </h2>
-                        <p> Accompagnement des primo-arrivant.e.s à la mise en place d’un projet entrepreneurial  </p>
-                    </div>
-
-                    <div className="flex flex-col ">
-                        <figure className="mb-5">
-                            <StaticImage src="../images/pexels-thirdman.jpg" alt="A dinosaur" className="" />
-                        </figure>
-                        <h2 className="text-2xl text-orange-interra mb-2 font-black">Formation Interculturelle</h2>
-                        <p>
-
-
-                            Faites appel à nous pour organiser une formation à l’interculturalité !
-                        </p>
-                    </div>
-
-
-
-                </section>
+                <Listprojet />
 
             </article>
             <article className="w-7/12 py-5 md:py-20    m-auto">
