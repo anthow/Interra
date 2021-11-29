@@ -43,7 +43,7 @@ const Listprojet = () => {
   return (
 
 
-    <article className="w-10/12 md:w-7/12 my-10 mt-20   m-auto">
+    <article className="w-10/12 my-10 mt-20   m-auto">
       <section className="flex w-full md:grid grid-cols-2 gap-x-10 gap-y-20  flex-wrap ">
 
         <div className="flex flex-col">

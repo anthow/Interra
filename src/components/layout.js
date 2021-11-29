@@ -11,6 +11,7 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./footer"
 
+
 const Layout = ({ children }) => {
 
   return (
@@ -20,7 +21,7 @@ const Layout = ({ children }) => {
       <Header/>
       </section>
       <section className="w-12/12 mt-24 md:mt-0  m-auto font-sans">
-        <main className="flex-1 md:mt-60">{children}</main>
+        <main className="flex-1 md:mt-52">{children}</main>
        </section>
        <Footer className="w-12/12 m-auto font-sans" />
        </div>

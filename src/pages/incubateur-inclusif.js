@@ -10,20 +10,20 @@ const incubateurPage = ({ data }) => (
     <Layout className="">
         <Seo title="Incubateur Inclusif" />
         <div className="w-12/12">
-            <article className="w-10/12 md:w-7/12 mt-10   m-auto">
-                <h1 className="font-black text-4xl mb-20 text-vert-interra  bg-white text-center"> {data.datoCmsIncubateurInclusif.titre}</h1>
-                <section className="md:grid grid-cols-2 mb-10  gap-x-10 gap-y-20">
+            <article className="w-10/12  mt-10   m-auto">
+                <h1 className="font-black text-4xl mb-10 md:mb-20 text-vert-interra  bg-white text-center"> {data.datoCmsIncubateurInclusif.titre}</h1>
+                <section className="flex flex-col md:flex-row mb-10 justify-center md:w-9/12 m-auto  gap-x-10 gap-y-10 md:gap-y-20">
 
-                    <figure>
-                        <GatsbyImage image={data.datoCmsIncubateurInclusif.image.gatsbyImageData} alt={data.datoCmsIncubateurInclusif.image.alt} className="h-full " />
+                    <figure className="md:w-1/2">
+                        <GatsbyImage image={data.datoCmsIncubateurInclusif.image.gatsbyImageData} alt={data.datoCmsIncubateurInclusif.image.alt} className=" " />
 
                     </figure>
-                    <div>
+                    <div className="md:w-1/2">
                         <div dangerouslySetInnerHTML={{ __html: data.datoCmsIncubateurInclusif.textePartieUn }} className="paragraphe"></div>
                     </div>
 
                 </section>
-                <div dangerouslySetInnerHTML={{ __html: data.datoCmsIncubateurInclusif.textePartieDeux }} className="paragraphe"></div>
+                <div dangerouslySetInnerHTML={{ __html: data.datoCmsIncubateurInclusif.textePartieDeux }} className="paragraphe "></div>
                 <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> Je veux soutenir le projet </button>
 
             </article>

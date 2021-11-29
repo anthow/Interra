@@ -11,7 +11,7 @@ const HistoirePage = ({ data }) => (
           <Seo title="Histoire de" />
 
         <div className="w-12/12">
-            <article className="w-10/12 md:w-7/12 my-10   m-auto">
+            <article className="w-10/12  my-10   m-auto">
               <h1 className="mb-10 text-4xl"> Histoire de...</h1>
 
         <section className="flex w-full md:grid grid-cols-2 gap-x-10 gap-y-10  flex-wrap ">

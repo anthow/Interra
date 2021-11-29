@@ -10,9 +10,9 @@ const FormationPage = ({ data }) => (
     <Layout className="">
         <Seo title="Formation interculturelle" />
         <div className="w-12/12">
-            <article className="w-10/12 md:w-7/12 mt-10   m-auto">
-                <h1 className="font-black text-4xl mb-20 text-vert-interra  text-center"> {data.datoCmsFormationInterculturelle.titre}</h1>
-                <section className="md:grid grid-cols-2 mb-10  gap-x-10 gap-y-20">
+            <article className="w-10/12 mt-2  m-auto">
+                <h1 className="font-black text-4xl mb-10 md:mb-20 text-vert-interra  text-center"> {data.datoCmsFormationInterculturelle.titre}</h1>
+                <section className="md:grid grid-cols-2 mb-10 flex flex-col gap-x-10 gap-y-10 md:gap-y-20">
                     <figure>
                         <GatsbyImage image={data.datoCmsFormationInterculturelle.imageUneOrganiser.gatsbyImageData} alt={data.datoCmsFormationInterculturelle.imageUneOrganiser.alt} className="" />
 

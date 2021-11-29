@@ -10,7 +10,7 @@ const HistoirePage = ({ data }) => (
   <Layout className="">
     <Seo title={"Histoire de " + data.datoCmsHistoireDe.nomDeLaPersonne} />
 
-    <article className="w-10/12 md:w-7/12 my-20 md:grid grid-cols-2  gap-x-10  m-auto">
+    <article className="w-10/12  my-20 md:grid grid-cols-2  gap-x-10  m-auto">
       <figure className="mb-5">
         <GatsbyImage image={data.datoCmsHistoireDe.imagePrSentation.gatsbyImageData} alt={data.datoCmsHistoireDe.imagePrSentation.alt} className="" />
       </figure>
@@ -20,7 +20,7 @@ const HistoirePage = ({ data }) => (
         <div dangerouslySetInnerHTML={{ __html: data.datoCmsHistoireDe.texteActivit }} className=" "></div>
       </section>
     </article>
-    <article className="w-10/12 md:w-7/12 my-10 md:grid grid-cols-2 gap-x-10 gap-y-5  m-auto">
+    <article className="w-10/12  my-10 md:grid grid-cols-2 gap-x-10 gap-y-5  m-auto">
       <section>
         <h2 className=" text-3xl text-orange-interra mb-10">{data.datoCmsHistoireDe.nomDeLaPersonne} parle nous de ton parcours</h2>
         <div dangerouslySetInnerHTML={{ __html: data.datoCmsHistoireDe.texteParcours }} className=" "></div>
@@ -29,10 +29,10 @@ const HistoirePage = ({ data }) => (
         <GatsbyImage image={data.datoCmsHistoireDe.imageParcours.gatsbyImageData} alt={data.datoCmsHistoireDe.imageParcours.alt} className="w-full" />
       </figure>
     </article>
-    <article className="w-10/12 md:w-7/12 mb-20  m-auto">
+    <article className="w-10/12  mb-20  m-auto">
       <div dangerouslySetInnerHTML={{ __html: data.datoCmsHistoireDe.texteParcoursDeux }} className=""></div>
     </article>
-    <article className="w-10/12 md:w-7/12 my-10 md:grid grid-cols-2 gap-x-10 gap-y-5  m-auto">
+    <article className="w-10/12 my-10 md:grid grid-cols-2 gap-x-10 gap-y-5  m-auto">
       <figure className="mb-5">
         <GatsbyImage image={data.datoCmsHistoireDe.passions.gatsbyImageData} alt={data.datoCmsHistoireDe.passions.alt} className="w-full" />
       </figure>
@@ -42,11 +42,11 @@ const HistoirePage = ({ data }) => (
         <div dangerouslySetInnerHTML={{ __html: data.datoCmsHistoireDe.textesPassions }} className=" "></div>
       </section>
     </article>
-    <article className="w-10/12 md:w-7/12 mb-20  m-auto">
+    <article className="w-10/12 mmb-20  m-auto">
       <div dangerouslySetInnerHTML={{ __html: data.datoCmsHistoireDe.textPassionsDeux }} className=""></div>
     </article>
     <article className="w-12/12 bg-vert-interra">
-      <section className=" w-10/12 md:w-7/12 py-10  m-auto text-white">
+      <section className=" w-10/12 py-10  m-auto text-white">
         <h2 className=" text-3xl  mb-10">
           Qu'est-ce-que tu aimes le plus à Liège ?</h2>
         <div dangerouslySetInnerHTML={{ __html: data.datoCmsHistoireDe.texteLiGe }} className=""></div>
@@ -54,7 +54,7 @@ const HistoirePage = ({ data }) => (
       </section>
 
     </article>
-    <article className="w-10/12 md:w-7/12 mt-20 mb-10 md:grid grid-cols-3 gap-x-10 gap-y-5  m-auto">
+    <article className="w-10/12  mt-20 mb-10 md:grid grid-cols-3 gap-x-10 gap-y-5  m-auto">
       <section className="col-span-2">
     <h2 className=" text-3xl text-orange-interra mb-10">
         Quel est ton plus grand souhait ?

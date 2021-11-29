@@ -11,14 +11,15 @@ const Newsletter = () => (
               <div class="sib-input sib-form-block">
                 <div class="form__entry entry_block">
                   <div class="form__label-row ">
+                    <h2 className="text-white text-xl font-black">Envie de rester informé(e) ?</h2>
                     <label class="entry__label" for="EMAIL" data-required="*">
-                      Veuillez renseigner votre adresse email pour vous inscrire
+                      Veuillez renseigner votre adresse email pour vous inscrire à notre newsletter
                     </label>
 
                     <div className="md:flex space-x-2 items-center ">
                       <input className="my-2 p-1 pl-2" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required />
               <div class="sib-form-block" >
-                <button class=" bg-yellow-500 text-white text-center md:font-black  md:w-auto m-auto  mb-2 md:mb-0 p-1 hover:bg-yellow-400" form="sib-form" type="submit">
+                <button class=" text-white bg-orange-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-orange-interra hover:bg-white  hover:border-orange-interra" form="sib-form" type="submit">
 
                   S'inscrire
                 </button>
