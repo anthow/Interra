@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 
 const devenirBenevole = () => (
     <Layout className="">
-        <Seo title="Agir avec nous " />
+        <Seo title="former un duo-langue" />
         <div className="w-12/12">
             <article className="w-10/12  mt-10   m-auto">
             <h1 className="font-black text-4xl  text-vert-interra  bg-white text-center"> Former duo-langue </h1>
