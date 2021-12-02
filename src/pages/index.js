@@ -101,17 +101,12 @@ const IndexPage = ({ data }) => (
             <div dangerouslySetInnerHTML={{ __html: data.datoCmsAccueil.texteTiquette }} className="mb-5"></div>
 
           </p>
-          <div className=" flex flex-nowrap">
+          
             <figure className=" ">
               <GatsbyImage image={data.datoCmsAccueil.imageEtiquetteUn.gatsbyImageData} alt={data.datoCmsAccueil.imageEtiquetteUn.alt} className="" />
 
             </figure>
-            <figure className=" ">
-              <GatsbyImage image={data.datoCmsAccueil.imageEtiquetteDeux.gatsbyImageData} alt={data.datoCmsAccueil.imageEtiquetteDeux.alt} className="" />
-
-            </figure>
-
-          </div>
+         
           <button className="self-end   mt-10 align-right text-white text-center font-black bg-orange-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-orange-interra hover:bg-white border hover:border-orange-interra   mb-2 md:mb-0 hidden ">Nos prochains événements</button>
         </article>
       </div>
