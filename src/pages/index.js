@@ -86,6 +86,9 @@ const IndexPage = ({ data }) => (
 
 
           </figure>
+          <Link to="/seance-d-information">
+          <button className=" mt-5 text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra"> Séance d'information </button>
+</Link>
         </article>
         <article>
           <h3 className="text-lg text-orange-interra mb-2 font-semibold"> {data.datoCmsAccueil.titreAiderMigrant} </h3>
@@ -94,6 +97,10 @@ const IndexPage = ({ data }) => (
             <GatsbyImage image={data.datoCmsAccueil.imageAiderLesMigrants.gatsbyImageData} alt={data.datoCmsAccueil.imageAiderLesMigrants.alt} className="" />
 
           </figure>
+          <a href="https://www.cire.be/publication/comment-aider-les-migrants-en-belgique-voici-idees-concretes/" rel="noreferrer" target="_blank">
+
+          <button className=" mt-5 text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra"> idées concrètes </button>
+</a>
         </article>
         <article className="flex flex-col">
           <h3 className="text-lg mb-2 text-orange-interra font-semibold"> {data.datoCmsAccueil.titreTiquette}</h3>
@@ -106,24 +113,21 @@ const IndexPage = ({ data }) => (
               <GatsbyImage image={data.datoCmsAccueil.imageEtiquetteUn.gatsbyImageData} alt={data.datoCmsAccueil.imageEtiquetteUn.alt} className="" />
 
             </figure>
-         
-          <button className="self-end   mt-10 align-right text-white text-center font-black bg-orange-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-orange-interra hover:bg-white border hover:border-orange-interra   mb-2 md:mb-0 hidden ">Nos prochains événements</button>
+            <button className=" mt-5 text-white bg-vert-interra font-black  p-1 px-2 w-7/12 rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra"> Commander des étiquettes </button>
+
         </article>
       </div>
 
 
     </section>
-    <section className="w-12/12 md:10/12  m-auto md:grid grid-cols-3 mt-10 md:mt-32 auto-cols-fr content-center">
-      <div className="bg-orange-interra flex flex-col md:grid grid-cols-2 col-span-2 py-5">
+    <section className="w-12/12 md:10/12  m-auto md:grid grid-cols-3 mt-10 md:mt-40 auto-cols-fr content-center">
+      <div className="bg-orange-interra flex flex-col md:grid grid-cols-2 col-span-2 py-16">
         <article className="   flex flex-col place-self-center order-2 px-10 md:px-0 py-5 md:pt-0  ">
-          <h2 className=" text-2xl md:text-4xl md:pl-20 font-black text-white text-center  mb-5">  Agir avec nous</h2>
-          <p className="text-white md:pl-20 ">
-            Que serions-nous sans vous et votre générosité ? Ensemble offrons une seconde chance auxpersonnes qui en ont le plus besoin pour faire en sorte que l’immigration
-            ne soit plus perçue comme une charge par la société d’accueil mais comme une richesse !
+          <h2 className=" text-2xl md:text-4xl md:pl-20 font-black text-white text-center  mb-5"> {data.datoCmsAccueil.titreAgirAvecNous}</h2>
+            <div dangerouslySetInnerHTML={{ __html: data.datoCmsAccueil.texteAgirAvecNous }} className="text-white md:pl-20"></div>
 
-          </p>
         </article>
-        <article className="place-self-center order-3 pb-5 md:pb-0 ">
+        <article className="place-self-center order-3 pb-5 md:pb-0 ">                                                                                                       
           <ul className="flex flex-col justify-self-right items-center m-auto content-center self-center   ">
             <Link to="/agir-avec-nous/#don">
               <li> <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra"> faire un don </button></li>
@@ -142,8 +146,9 @@ const IndexPage = ({ data }) => (
 
         <figure className=" md:relative mt-10 md:mt-0  m-auto md:bottom-20 right-20 mb-10 md:mb-0 w-10/12 md:w-12/12    ">
 
-          <GatsbyImage image={data.datoCmsAccueil.imageSAnceDInformation.gatsbyImageData} alt={data.datoCmsAccueil.imageSAnceDInformation.alt} className="order-1" />
+          <GatsbyImage image={data.datoCmsAccueil.imageAgirAvecNous.gatsbyImageData} alt={data.datoCmsAccueil.imageAgirAvecNous.alt} className="order-1" />
 </figure>
+<button className=" m-auto text-white text-center font-black bg-vert-interra font-black md:ml-10 p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra   mb-2 md:mb-0  ">Nos prochains événements</button>
 
      </article>
     </section>
@@ -175,6 +180,12 @@ export const query = graphql`
           texteEntreprise
           texteAiderMigrant
           texteAgir
+          imageAgirAvecNous {
+            alt
+            gatsbyImageData(width:400)
+          }
+          texteAgirAvecNous
+          titreAgirAvecNous
           imagesHeader{
             alt
             gatsbyImageData
@@ -208,6 +219,7 @@ export const query = graphql`
             alt
             gatsbyImageData
           }
+          
         }
   }
 `
