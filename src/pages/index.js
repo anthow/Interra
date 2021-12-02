@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => (
             <div dangerouslySetInnerHTML={{ __html: data.datoCmsAccueil.texteTiquette }} className="mb-5"></div>
 
           </p>
-          <div className=" flex  space-x-2">
+          <div className=" flex flex-nowrap">
             <figure className=" ">
               <GatsbyImage image={data.datoCmsAccueil.imageEtiquetteUn.gatsbyImageData} alt={data.datoCmsAccueil.imageEtiquetteUn.alt} className="" />
 
