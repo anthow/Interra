@@ -52,7 +52,7 @@ const NavbarLinks = () => {
         </ul>
       </nav>
       <nav name="menu" className="mt-5 order-1 md:order-2 mb-10 md:mb-0 ">
-        <ul className=" text-m  flex-col md:flex-row md:flex  m-auto md:space-x-7 ">
+        <ul className=" text-lg font-black  flex-col md:flex-row md:flex  m-auto md:space-x-20 ">
           <Link to="/">
             <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 ">Accueil</li>
           </Link>

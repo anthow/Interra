@@ -119,7 +119,7 @@ const IndexPage = ({ data }) => (
 
     </section>
     <section className="w-12/12 md:10/12  m-auto md:grid grid-cols-3 mt-10 md:mt-32 auto-cols-fr content-center">
-      <div className="bg-orange-interra flex flex-col md:grid grid-cols-2 col-span-2">
+      <div className="bg-orange-interra flex flex-col md:grid grid-cols-2 col-span-2 py-5">
         <article className="   flex flex-col place-self-center order-2 px-10 md:px-0 py-5 md:pt-0  ">
           <h2 className=" text-2xl md:text-4xl md:pl-20 font-black text-white text-center  mb-5">  Agir avec nous</h2>
           <p className="text-white md:pl-20 ">
@@ -129,9 +129,9 @@ const IndexPage = ({ data }) => (
           </p>
         </article>
         <article className="place-self-center order-3 pb-5 md:pb-0 ">
-          <ul className="flex flex-col justify-self-right items-center m-auto content-center self-center  md:pt-8  ">
+          <ul className="flex flex-col justify-self-right items-center m-auto content-center self-center   ">
             <Link to="/agir-avec-nous/#don">
-              <li> <button className="  mt-5 text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra"> faire un don </button></li>
+              <li> <button className="   text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra"> faire un don </button></li>
             </Link>
             <Link to="/agir-avec-nous/#membre">
             <li> <button className="  mt-5 text-white font-black border p-1 px-2 border-white rounded hover:bg-white hover:text-orange-interra"> Devenir membre </button></li>
@@ -148,19 +148,9 @@ const IndexPage = ({ data }) => (
         <figure className=" md:relative mt-10 md:mt-0  m-auto md:bottom-20 right-20 mb-10 md:mb-0 w-10/12 md:w-12/12    ">
 
           <GatsbyImage image={data.datoCmsAccueil.imageSAnceDInformation.gatsbyImageData} alt={data.datoCmsAccueil.imageSAnceDInformation.alt} className="order-1" />
+</figure>
 
-
-        </figure>
-        <div className="ml-10 w-10/12 md:w-9/12">
-          <h2 className=" text-2xl md:text-4xl font-black text-vert-interra  mb-5"> Pour les entreprises </h2>
-          <p className="mb-5">
-            Nos équipes vous proposent des solution de team building et de table de conversation sur mesure.
-          </p>
-          <Link to="/contact">
-
-          <button className="  text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra"> Contact </button>
-       </Link>
-        </div></article>
+     </article>
     </section>
 
   </Layout>
