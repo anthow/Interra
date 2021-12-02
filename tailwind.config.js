@@ -11,7 +11,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      order: ['odd'],
+      order: ['even'],
+    },
   },
   plugins: [],
 }
