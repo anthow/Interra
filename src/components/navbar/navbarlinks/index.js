@@ -13,8 +13,12 @@ const NavbarLinks = () => {
             <Link to="/presse">
               Presse
             </Link></li>
+            <Link to="/agir-avec-nous/#don">
           <li className=" text-white bg-vert-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-vert-interra hover:bg-white border hover:border-vert-interra">Faire un don</li>
+          </Link >
+          <Link to="/agir-avec-nous/#membre">
           <li className=" text-white bg-orange-interra font-black  p-1 px-2  rounded hover:bg-white-interra hover:text-orange-interra hover:bg-white border hover:border-orange-interra ">Devenir membre</li>
+          </Link>
           <li className="w-auto text-center mb-2 md:mb-0  m-auto">
             <a href="https://api.whatsapp.com/send?phone=0032471583411" rel="noreferrer" target="_blank" >
               <figure className="">
@@ -48,7 +52,7 @@ const NavbarLinks = () => {
         </ul>
       </nav>
       <nav name="menu" className="mt-5 order-1 md:order-2 mb-10 md:mb-0 ">
-        <ul className=" text-m  flex-col md:flex-row md:flex  m-auto md:space-x-7 ">
+        <ul className=" text-lg font-black  flex-col md:flex-row md:flex  m-auto md:space-x-20 ">
           <Link to="/">
             <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 ">Accueil</li>
           </Link>
@@ -104,7 +108,7 @@ const NavbarLinks = () => {
               </ul>
             </div>
           </li>
-          <li className="hover:text-yellow-500 text-center mb-2 md:mb-0"> Agenda </li>
+          <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 hidden"> Agenda </li>
           <li className="text-center mb-2">
             <div class="dropdown inline-block relative">
               <button class="  hover:text-yellow-500 text-center mb-2 md:mb-0   rounded inline-flex items-center">

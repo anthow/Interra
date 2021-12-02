@@ -7,13 +7,11 @@ import { Link } from "gatsby"
 
 
 const Navigation = styled.nav`
-  height: auto;
   display: flex;
   background-color: #fff;
   justify-content: space-between;
   margin: 0 auto;
   z-index: 999;
-  align-self: baseline;
   align-items: center;
 
   @media (max-width: 768px) {
@@ -94,7 +92,7 @@ const Navbar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
 
     return (
-        <Navigation classname=" md:mt-5">
+        <Navigation classname=" ">
 
             <figure className="md:hidden">
 
@@ -103,14 +101,14 @@ const Navbar = () => {
                     width={100}
                     quality={95}
                     formats={["auto", "webp", "avif"]}
-                    alt="A Gatsby astronaut"
+                    alt="Logo Interra"
                 />      </figure>
                    <figure className="hidden md:block">
                    <Link to="/">
 
                 <StaticImage
                     src="../../images/interra-logo-300x300.jpeg"
-                    width={200}
+                    width={150}
                     quality={95}
                     formats={["auto", "webp", "avif"]}
                     alt="A Gatsby astronaut"

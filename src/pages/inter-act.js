@@ -8,14 +8,14 @@ const Interactpage = ({ data }) => (
     <Layout className="">
         <Seo title="Inter-act" />
         <div className="w-12/12">
-            <article className="w-10/12 md:w-7/12 mt-10   m-auto">
+            <article className="w-10/12  mt-10   m-auto">
                 <h1 className="font-black text-4xl mb-10 md:mb-20 text-vert-interra  bg-white text-center"> {data.datoCmsInterAct.titre}</h1>
                 <div className="flex flex-col md:gap-y-32 gap-y-10 ">
-                <section className="md:grid grid-cols-2 grid-gap-x-10 ">
-                    <figure>
-                        <GatsbyImage image={data.datoCmsInterAct.imageAtelierDanse.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierDanse.alt} className=" mb-5 md:mb-0" />
+                <section className="md:grid grid-cols-2   ">
+                    <figure className="md:justify-self-center">
+                        <GatsbyImage image={data.datoCmsInterAct.imageAtelierDanse.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierDanse.alt} className=" mb-5 md:mb-0 " />
                     </figure>
-                    <div>
+                    <div className="">
                         <h2 className="font-black text-3xl mb-2 text-vert-interra"> {data.datoCmsInterAct.personneAtelierDanse}</h2>
                         <h3 className="font-black text-3xl mb-5 text-orange-interra"> {data.datoCmsInterAct.titreAtelierDanse}</h3>
                         <div dangerouslySetInnerHTML={{ __html: data.datoCmsInterAct.texteAtelierDanse }}></div>
@@ -34,14 +34,14 @@ const Interactpage = ({ data }) => (
 
                     </div>
 
-                    <figure className="order-1 mb:order-2">
+                    <figure className="order-1 mb:order-2 md:justify-self-center">
                         <GatsbyImage image={data.datoCmsInterAct.imageAtelierSport.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierSport.alt} className="" />
                     </figure>
 </section>
-<section className="md:grid grid-cols-2 grid-gap-x-10 flex flex-col gap-y-5 md:gap-y-0  ">
+<section className="md:grid grid-cols-2 gap-x-10 flex flex-col gap-y-5 md:gap-y-0  ">
 
 
-                    <figure>
+                    <figure className="md:justify-self-center">
                         <GatsbyImage image={data.datoCmsInterAct.imageAtelierLangue.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierLangue.alt} className="" />
                     </figure>
                     <div>
@@ -62,13 +62,13 @@ const Interactpage = ({ data }) => (
 
                     </div>
 
-                    <figure className="order-1 mb:order-2">
+                    <figure className="order-1 mb:order-2 md:justify-self-center">
                         <GatsbyImage image={data.datoCmsInterAct.imageAtelierPhilo.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierPhilo.alt} className="" />
                     </figure>
 </section>
 <section className="md:grid grid-cols-2 grid-gap-x-10 flex flex-col gap-y-5 md:gap-y-0  ">
 
-                    <figure>
+                    <figure className="md:justify-self-center">
                         <GatsbyImage image={data.datoCmsInterAct.imageAtelierPsycho.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierPsycho.alt} className="" />
                     </figure>
                     <div>
@@ -89,7 +89,7 @@ const Interactpage = ({ data }) => (
 
                     </div>
 
-                    <figure className="order-1 mb:order-2">
+                    <figure className="order-1 mb:order-2 md:justify-self-center">
                         <GatsbyImage image={data.datoCmsInterAct.imageAtelierCuisine.gatsbyImageData} alt={data.datoCmsInterAct.imageAtelierCuisine.alt} className="" />
                     </figure>
 
