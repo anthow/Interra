@@ -108,7 +108,9 @@ const NavbarLinks = () => {
               </ul>
             </div>
           </li>
-          <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 hidden"> Agenda </li>
+          <Link to="/agenda">
+          <li className="hover:text-yellow-500 text-center mb-2 md:mb-0 "> Agenda </li>
+          </Link>
           <li className="text-center mb-2">
             <div class="dropdown inline-block relative">
               <button class="  hover:text-yellow-500 text-center mb-2 md:mb-0   rounded inline-flex items-center">
