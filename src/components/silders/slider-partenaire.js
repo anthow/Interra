@@ -1,44 +1,47 @@
-
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-const settings = {
-  dots: true,
-  infinite: true,
-  autoplay: true,
-}
 
 
 const Slidepartenaire = () => (
   <StaticQuery
-    query={graphql`
-    {
-      datoCmsDecouvrirInterra {
-        imagesNosPartenaires {
-          gatsbyImageData
-        }
+  query={graphql`
+  {
+    datoCmsDecouvrirInterra {
+          imagesNosPartenaires {
+            alt
+            gatsbyImageData (width:150)
       }
     }
-  
-  
-  
-    `}
+  }
+`}
     render={data => 
-      <Slider {...settings} className="overflow-hidden w-min">
-        
+      <ul className="flex flex-col flex-wrap md:flex-row md:space-x-10 items-center">
+
+{data.datoCmsDecouvrirInterra.imagesNosPartenaires.map(pic => 
+  <li className="self-center">
+
+<figure className="">
                 
-        {data.datoCmsDecouvrirInterra.imagesNosPartenaires.map(pic => 
-                
-                <GatsbyImage image={pic.gatsbyImageData} className="" />
+                <GatsbyImage image={pic.gatsbyImageData} className={pic.alt} />
+                </figure>
+                </li>
             
             )}
+
+  
+
+
+
+</ul>
         
-    </Slider>    }
+                
+  
+        
+     }
   ></StaticQuery>
 )
 
 export default Slidepartenaire
+
