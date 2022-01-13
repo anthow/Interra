@@ -15,7 +15,7 @@ const DecouvrirPage = ({ data }) => (
         <div className="w-12/12">
             <article className="w-10/12  m-auto">
                 <h1 className="font-black text-4xl mt-10 md:mt-0 mb-10 md:mb-20 text-vert-interra  bg-white text-center " id="adn"> {data.datoCmsDecouvrirInterra.titreAdn}</h1>
-                <section className="md:grid grid-cols-2  mb-10">
+                <section className="md:grid grid-cols-2 md:space-x-10  mb-10">
                     <figure className="row-span-2">
                         <GatsbyImage image={data.datoCmsDecouvrirInterra.imageAdn.gatsbyImageData} alt={data.datoCmsDecouvrirInterra.imageAdn.alt} className=" h-min mb-5 md:mb-0" />
 
