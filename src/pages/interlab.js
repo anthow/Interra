@@ -1,14 +1,14 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
 
 
-const incubateurPage = ({ data }) => (
+const interlabPage = ({ data }) => (
     <Layout className="">
-        <Seo title="Incubateur Inclusif" />
+        <Seo title="Interlab" />
         <div className="w-12/12">
             <article className="w-10/12  mt-10   m-auto">
                 <h1 className="font-black text-4xl mb-10 md:mb-20 text-vert-interra  bg-white text-center"> {data.datoCmsIncubateurInclusif.titre}</h1>
@@ -24,9 +24,10 @@ const incubateurPage = ({ data }) => (
 
                 </section>
                 <div dangerouslySetInnerHTML={{ __html: data.datoCmsIncubateurInclusif.textePartieDeux }} className="paragraphe "></div>
+                <Link to="/../devenir-membre">
                 <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> Je veux soutenir le projet </button>
-
-            </article>
+                </Link>
+                            </article>
         </div>
     </Layout>
 )
@@ -49,5 +50,5 @@ export const query = graphql`
 
 
 
-export default incubateurPage
+export default interlabPage
 

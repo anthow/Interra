@@ -4,11 +4,13 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
+
 
 
 const Duopage = ({ data }) => (
     <Layout className="">
-        <Seo title="Duo langue" />
+        <Seo title="Duo2Change" />
         <div className="w-12/12">
             <article className="md:w-10/12  mt-2   m-auto">
                 <h1 className="font-black text-4xl mb-10 md:mb-20 text-vert-interra  bg-white text-center"> {data.datoCmsDuoLangue.titre}</h1>
@@ -64,6 +66,11 @@ const Duopage = ({ data }) => (
                   
                 />     whatsapp
                     </p>
+                    <div className="w-10/12 md:w-12/12 m-auto flex items-center space-x-2"> 
+                    <Link to="../devenir-membre">
+                    <button className=" mt-5 text-white font-black  p-1 px-2  bg-orange-interra hover:opacity-80 rounded"> 
+               Participer </button></Link>
+               </div>
             </article>
         </div>
     </Layout>
