@@ -27,6 +27,7 @@ const Contact = ({ data }) => (
                     <GatsbyImage image={node.photo.gatsbyImageData} alt={node.photo.alt} className="m-auto" />
 
                   <div>
+                    z
                     <h2 className="font-black text-lg mt-2 text-vert-interra  text-center"> {node.nomPrNom} </h2>
                     <h3 className="font-black text-m  text-orange-interra  text-center"> {node.fonction} </h3>
                     <p className="mt-2 text-center">{node.adresseMail} <br />{node.numRoDeTLPhone}</p>
